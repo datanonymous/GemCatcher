@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn14yw6tidds3"]
+
+[ext_resource type="Texture2D" uid="uid://btokfhomyxbwx" path="res://assets/element_red_diamond.png" id="1_lvrft"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hw7lu"]
+size = Vector2(36.0625, 35.3553)
+
+[node name="Gem" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lvrft")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.25, 0.25)
+rotation = 0.785398
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_hw7lu")
